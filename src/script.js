@@ -57,6 +57,7 @@ if (seconds === 0) {
         document.getElementById("second").innerHTML = '0';
         document.getElementById("millisecond").innerHTML ='0';
         alert("TIME UP");
+        
 }
 }, 1);   
    }
