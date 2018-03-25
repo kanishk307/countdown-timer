@@ -1,43 +1,115 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<link rel="stylesheet" href="src/style.css" type="text/css">
+
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="src/style.css" type="text/css">
 </head>
-<body class="text-center">
-<div class="row">
-    <div class="container">
-        <div class="col-lg-12 bg-dark pb-5 mt-4">
-            <h1 class="pt-5 text-white">Countdown Clock</h1>
-<div id="clockdiv">
-  <div>
-    <span class="days" id="day"></span>
-    <div class="smalltext text-white">Days</div>
-  </div>
-  <div>
-    <span class="hours" id="hour"></span>
-    <div class="smalltext text-white">Hours</div>
-  </div>
-  <div>
-    <span class="minutes" id="minute"></span>
-    <div class="smalltext text-white">Minutes</div>
-  </div>
-  <div>
-    <span class="seconds" id="second"></span>
-    <div class="smalltext text-white">Seconds</div>
-  </div>
-</div>
 
-        </div>
+
+<body class="py-5 bg-dark">
+<h2 class="text-white text-center display-2">Countdown Timer</h2>
+<div class="pt-5 mx-5 full-container" style="background-color: #430000;">
+<form action="" class="form form-group data-input" id="data-form">
+<div class="row text-center px-5">
+    <div class="col">
+      <label for="year-textbox" class="text-white">Year : </label><input type="text" id="year-textbox" class="form-control d-inline">  
     </div>
+    
+    <div class="col">
+      <label for="month-textbox" class="text-white">Month : </label><input type="text" id="month-textbox" class="form-control d-inline">  
+    </div>
+    
+    <div class="col">
+      <label for="day-textbox" class="text-white">Day : </label><input type="text" id="day-textbox" class="form-control d-inline">  
+    </div>
+    
+    <div class="col">
+      <label for="hour-textbox" class="text-white">Hour : </label><input type="text" id="hour-textbox" class="form-control d-inline">  
+    </div>
+    
+    <div class="col">
+      <label for="minute-textbox" class="text-white">Minutes : </label><input type="text" id="minute-textbox" class="form-control d-inline">  
+    </div>
+    
+    <div class="col">
+      <label for="second-textbox" class="text-white">Seconds : </label><input type="text" id="second-textbox" class="form-control d-inline">  
+    </div>
+    
+    <div class="col">
+      <label for="millisecond-textbox" class="text-white">Milliseconds : </label><input type="text" id="millisecond-textbox" class="form-control d-inline">  
+    </div>
+    
 </div>
 
- 
-<p id="demo"></p>
+
+
+</form>
+<button class="btn btn-primary btn-lg mx-auto mt-0 bg-secondary" style="display: block;" id="submit">Submit</button>
+
+<div class="row main-container py-5" id="countdown-main">
+
+<div class="col">
+   <div class="card">
+       <div class="card-header">
+           <div>Days</div>
+       </div>
+       <div class="card-body">
+           <span class="days" id="day"></span>
+       </div>
+   </div>   
+</div>
+
+
+
+<div class="col">
+   <div class="card">
+       <div class="card-header">
+           <div>Hours</div>
+       </div>
+       <div class="card-body">
+           <span class="hours" id="hour"></span>
+       </div>
+   </div>   
+</div>
+
+
+
+<div class="col">
+   <div class="card">
+       <div class="card-header">
+           <div>Minutes</div>
+       </div>
+       <div class="card-body">
+           <span class="minutes" id="minute"></span>
+       </div>
+   </div>   
+</div>
+
+
+<div class="col">
+   <div class="card">
+       <div class="card-header">
+           <div>Seconds</div>
+       </div>
+       <div class="card-body">
+           <span class="seconds" id="second"></span>
+       </div>
+   </div>   
+</div>
+
+
+</div>
+
+
  
 <script src="src/script.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+
+</div>
 
 </body>
 </html>
